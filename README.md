@@ -15,4 +15,9 @@
     2. Currently the website is deployed on a open-source portal playcode.io for preview purpose. To deploy to 
        production we need to buy DNS and host it on Wordpress, Shopify, Netlify, Wix, Hostinger or GoDaddy.
 
-    
+## 📁 Immersive Experience Folder
+
+The folder contains the version of the website which provides an immersive experience with glassmorphic UX design.
+Same method can be used to deploy the website to preview it.
+
+![img.png](img.png)
