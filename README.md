@@ -1,24 +1,26 @@
 # Website - Light House by Sahibaa Singh
 
-    This is a professional digital portal/website for Ms. Sahibaa Singh. The purpose of the is to show case digital
-    presence of Light House by Sahibaa Singh who runs life coaching and mentoring, psychological counseling services,
+    This is a professional digital portal/website for Ms. Sahibaa Singh. The purpose of this is to showcase digital
+    presence of Light House by Sahibaa Singh, who runs life coaching and mentoring, psychological counseling services,
     or therapeutic coaching.
 
-    The purpose of the website is to establish a strong digital presence for the business, enhance brand visibility
+    The purpose of the website is to establish a strong digital presence for the business and enhance brand visibility
     and engage a wider clientele.
 
 ## 📁 Development Language & Deployment
 
-    1. The website is build using "ReactJS" which is a free and open-source front-end JavaScript library build by
+    1. The website is built using "ReactJS," which is a free and open-source front-end JavaScript library built by
        META.
 
-    2. Currently the website is deployed on a open-source portal playcode.io for preview purpose. To deploy to 
-       production we need to buy DNS and host it on Wordpress, Shopify, Netlify, Wix, Hostinger or GoDaddy.
+    2. Currently, the website is deployed on an open-source portal playcode.io, for preview purposes. To deploy to 
+       Production, we need to buy a DNS and host it on WordPress, Shopify, Netlify, Wix, Hostinger, or GoDaddy.
 
 ## 📁 Immersive Experience Folder
 
-The folder contains the version of the website which provides an immersive experience with glassmorphic UX design.
+The folder contains the version of the website that provides an immersive experience with glassmorphic UX design.
 The same method can be used to deploy the website to preview it.
 
-![Uploading Screenshot 2026-06-11 at 7.14.58 pm.png…]()
+<img width="1510" height="733" alt="Screenshot 2026-06-11 at 7 14 58 pm" src="https://github.com/user-attachments/assets/ddd29dd1-afdb-4bb2-81bb-bafd4a6d3f20" />
+
+
 
