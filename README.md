@@ -20,4 +20,4 @@
 The folder contains the version of the website which provides an immersive experience with glassmorphic UX design.
 Same method can be used to deploy the website to preview it.
 
-![img.png](img.png)
+![Uploading Screenshot 2026-06-11 at 7.14.58 pm.png…]()
