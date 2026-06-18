@@ -17,8 +17,8 @@
 
 ## 📁 Immersive Experience Folder
 
-The folder contains the version of the website that provides an immersive experience with glassmorphic UX design.
-The same method can be used to deploy the website to preview it.
+    1. The folder contains the version of the website that provides an immersive experience with glassmorphic UX design.
+       The same method can be used to deploy the website to preview it.
 
 <img width="1510" height="733" alt="Screenshot 2026-06-11 at 7 14 58 pm" src="https://github.com/user-attachments/assets/ddd29dd1-afdb-4bb2-81bb-bafd4a6d3f20" />
 

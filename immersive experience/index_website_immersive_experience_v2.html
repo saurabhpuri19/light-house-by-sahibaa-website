@@ -79,13 +79,17 @@
     .nav-cta{font-size:.64rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;padding:12px 20px 10px 22px;border:1px solid var(--gold);color:var(--gold-light);text-decoration:none;transition:.3s;
       display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1;text-align:center;flex-shrink:0}
     .nav-cta:hover{background:var(--gold);color:var(--navy-deep)}
-    .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:10px;z-index:60;-webkit-tap-highlight-color:transparent;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+    .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:10px;z-index:60;-webkit-tap-highlight-color:transparent;min-width:44px;min-height:44px;align-items:center;justify-content:center;position:relative;transition:.3s}
     .burger span{display:block;width:24px;height:2px;background:var(--gold-light);border-radius:2px;transition:.3s}
+    .burger.open{background:rgba(201,168,76,.12);border-radius:50%}
+    .burger.open span{width:22px;height:2.5px}
     .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
     .burger.open span:nth-child(2){opacity:0}
     .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
     .mobile-menu{display:none;position:fixed;inset:0;z-index:55;background:rgba(5,9,17,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);flex-direction:column;align-items:center;justify-content:center;padding:env(safe-area-inset-top) 20px max(20px,env(safe-area-inset-bottom));overflow-y:auto}
     .mobile-menu.active{display:flex}
+    .mobile-menu-close{position:absolute;top:max(18px,env(safe-area-inset-top));right:max(18px,env(safe-area-inset-right));width:44px;height:44px;border-radius:50%;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.35);color:var(--gold-light);font-size:1.8rem;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:.3s;z-index:56}
+    .mobile-menu-close:hover{background:rgba(201,168,76,.22)}
     .mobile-menu a{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,7vw,2rem);color:var(--cream);text-decoration:none;padding:15px 30px;width:100%;text-align:center;transition:.3s;border-bottom:1px solid rgba(255,255,255,.06)}
     .mobile-menu a:hover{color:var(--gold-light)}
     .mobile-menu .mob-book{font-family:'Josefin Sans',sans-serif;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;background:var(--gold);color:var(--navy-deep);font-weight:600;margin-top:22px;border:none;padding:18px 44px}
@@ -258,6 +262,7 @@
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
     <a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#stories">Stories</a><a href="#contact">Contact</a>
     <a href="#contact" class="mob-book">Book a Session</a>
   </div>
@@ -391,12 +396,14 @@
   (function(){
     "use strict";
     /* ---- UI ---- */
-    var nav=document.getElementById('nav'),burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
+    var nav=document.getElementById('nav'),burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu'),menuClose=document.getElementById('mobileMenuClose');
+    function openMenu(){menu.classList.add('active');burger.classList.add('open');burger.setAttribute('aria-expanded','true');burger.setAttribute('aria-label','Close menu');document.body.style.overflow='hidden';}
+    function closeMenu(){menu.classList.remove('active');burger.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');document.body.style.overflow='';}
     burger.addEventListener('click',function(){
-      var open=menu.classList.toggle('active');burger.classList.toggle('open',open);
-      burger.setAttribute('aria-expanded',open?'true':'false');document.body.style.overflow=open?'hidden':'';
+      if(menu.classList.contains('active')){closeMenu();}else{openMenu();}
     });
-    menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('active');burger.classList.remove('open');document.body.style.overflow='';});});
+    if(menuClose){menuClose.addEventListener('click',closeMenu);}
+    menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
     if('IntersectionObserver' in window){
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -6% 0px'});
       document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
