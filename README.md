@@ -32,7 +32,7 @@
     4. Moon Waxing & Waning speed:
        CYCLE_SEC = 120 (currently set to 120 seconds)
 
-![Uploading Screenshot 2026-06-27 at 2.10.03 pm.png…]()
+<img width="1504" height="731" alt="Screenshot 2026-06-27 at 2 10 03 pm" src="https://github.com/user-attachments/assets/54450be4-9754-4965-a7f7-1334d56ecaf9" />
 
 
 
