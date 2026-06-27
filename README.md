@@ -1,24 +1,24 @@
-∂# Website - Light House by Sahibaa Singh
+## Website - Light House by Sahibaa Singh
 
     This is a professional digital portal/website for Ms. Sahibaa Singh. The purpose of this is to showcase digital
     presence of Light House by Sahibaa Singh, who runs life coaching and mentoring, psychological counseling services,
     or therapeutic coaching.
 
-    The purpose of the website is to establish a strong digital presence for the business and enhance brand visibility
-    and engage a wider clientele.
+    The purpose of the website is to establish a strong digital presence for the business & enhance brand visibility, 
+    and engage a wider clientele. The website is compatible with Desktop/ Mobile/ Tablet.
 
 ## 📁 Development Language & Deployment
 
     1. The website is built using "ReactJS," which is a free and open-source front-end JavaScript library built by
        META.
 
-    2. Currently, the website is deployed on an open-source portal playcode.io, for preview purposes. To deploy to 
+    2. Currently, the website is deployed on an open-source website tool "https://playcode.io", for test & preview purposes. To deploy to 
        Production, we need to buy a DNS and host it on WordPress, Shopify, Netlify, Wix, Hostinger, or GoDaddy.
 
 ## 📁 Immersive Experience Folder
 
     1. The folder contains the version of the website that provides an immersive experience with glassmorphic UX design.
-       The same method can be used to deploy the website to preview it.
+       The same method can be used to deploy the website to test & preview it.
 
 ## 📁 Configurable Properties
 
@@ -28,7 +28,7 @@
     2. Pagingnation on Blogs:
        PER_PAGE = 6 (currently set to 6 items per page)
     3. Add Post to Blogs:
-       Add PDF, Instagram Reels, Youtube Video's & Reels & PDF in the POSTS vairable.
+       Add PDF, Instagram Reels, YouTube Videos & Reels & PDF in the POSTS variable.
     4. Moon Waxing & Waning speed:
        CYCLE_SEC = 120 (currently set to 120 seconds)
 
