@@ -20,6 +20,18 @@
     1. The folder contains the version of the website that provides an immersive experience with glassmorphic UX design.
        The same method can be used to deploy the website to preview it.
 
+## 📁 Configurable Properties
+
+    1. For Blogs Pop-up:
+       blog-modal-opacity:0.88 -> blog-modal-opacity: 0 = fully see-through, 1 = fully solid
+       blog-modal-blur:30px -> backdrop blur strength (frosted-glass effect)
+    2. Pagingnation on Blogs:
+       PER_PAGE = 6 (currently set to 6 items per page)
+    3. Add Post to Blogs:
+       Add PDF, Instagram Reels, Youtube Video's & Reels & PDF in the POSTS vairable.
+    4. Moon Waxing & Waning speed:
+       CYCLE_SEC = 120 (currently set to 120 seconds)
+
 <img width="1510" height="733" alt="Screenshot 2026-06-11 at 7 14 58 pm" src="https://github.com/user-attachments/assets/ddd29dd1-afdb-4bb2-81bb-bafd4a6d3f20" />
 
 
